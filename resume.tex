@@ -222,7 +222,7 @@
 % Renders a a CV section headline with a nice underline in main color.
 % param 1: section title
 \newcommand{\cvsection}[1] {
-	\vspace{14pt}
+	\vspace{5pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{#1}}}\\[-4pt]
 		\textcolor{accentcol}{ \rule{0.2\textwidth}{1.5pt} } \\
@@ -295,14 +295,14 @@
 	\parbox{\mpwidth}{
 		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
 	 		\textcolor{black}{\textbf{#2}} & \colorbox{accentcol}{\makebox[0.32\mpwidth]{\textcolor{white}{\textbf{#1}}}} \\
-			\textcolor{maincol}{#3} & \\
-		\end{tabular*}\\[8pt]
+			\textcolor{gray}{#3} & \\
+		\end{tabular*}\\[3pt]
 	
 		\ifthenelse{\isempty{#4}}{}{
 			\cvtext{#4}\\
 		}
 	}
-	\vspace{14pt}
+	\vspace{10pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -324,13 +324,13 @@
     \begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
       \textcolor{black}{\textbf{#1}}&\multirow{2}{0.6\mpwidth}{\hfil {\includegraphics[height=0.14\mpwidth]{#4}}}\\
       \textcolor{maincol}{#2}\\
-    \end{tabular*}\\[8pt]
+    \end{tabular*}\\[3pt]
 	
     \ifthenelse{\isempty{#3}}{}{
       \cvtext{#3}\\
     }
 	}
-	\vspace{14pt}
+	\vspace{5pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -476,7 +476,7 @@
 
 \cvskill{Big data/ \newline Data science} {2+ yrs.} {0.45} \\[-2pt]
 
-\cvskill{Distributed legder \newline technology} {1+ yrs.} {0.2} \\[-2pt]
+\cvskill{Distributed ledger \newline technology} {1+ yrs.} {0.2} \\[-2pt]
 
 \cvsection{Frameworks \& \newline Technologies}
 
@@ -546,7 +546,7 @@
 \cvtext{
   Dominic is from Mississauga, Ontario where he works as a technical specialist at BMO. 
   Dom has 5 years of experience as a software developer with a focus on full-stack Javascript \& Typescript app development hosted on AWS.
-  He's also dabbled in AI and blockchain technologies using Tensorflow and tested smart contracts on NEO respectively. 
+  He's also dabbled in AI and blockchain technologies using Tensorflow and smart contracts on NEO respectively. 
   In his spare time, Dom plays acoustic renditions of 2000s punk-rock songs on his guitar and listens to Millennial Investing by The Investors's Podcast Network.
 }
 
@@ -555,7 +555,7 @@
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\vspace{10pt}
+\vspace{14pt}
 \cvsection{Work Experience}
 \vspace{4pt}
 
@@ -563,11 +563,12 @@
 {May 2017 - today}
 	{Technical Specialist | BMO}
 	{RPA, Data \& AI - SmartCore}
-	{Helped deploy multiple Workfusion platform environments.
-  Wrote multiple, reusable Java libraries on Workfusion such as DB connectors and SMTP/IMAP classes shared across projects.
-  Built a Reactjs app to monitor the health of virtual desktop images hosted on our environments.
-  Built a video streaming platform using videojs and RTMP to monitor robotic process automations in real-time.
-  Created dashboards via PowerBI, reporting on server status, platform capacity and tracking in-flight automation projects.
+	{
+  Helped deploy multiple Workfusion and UiPath (robotic process automation, RPA) platforms on premise and in private cloud.
+  Wrote multiple reusable Java libraries (ie. DB connectors, SMTP/IMAP) shared across projects.
+  Built a video streaming platform using Reactjs, Videojs and RTMP to monitor automation in real-time.
+  Integrated authentication and security via Active Director \& Cyberark. 
+  %Created dashboards via PowerBI, reporting on server status, platform capacity and tracking in-flight automation projects.
   }
 	\vfill\null
 
@@ -575,33 +576,27 @@
 {Jan 2017 - May 2019}
 	{IT Consultant | FDM Group}
 	{Toronto, GTA}
-	{Focused on helping customers build Java applications using relational DB backends. 
-  We utilized Spring Boot and the MVC design pattern.}
+	{Focused on helping customers build Java applications using relational DB backends (PostgreSQL, MySQL). 
+  We utilized Spring Boot and the MVC design patterns.}
 	\vfill\null
 	
-% \cvevent
-% {May 2015 - Jan 2017}
-% 	{Android App Developer | MCAC}
-% 	{Toronto, GTA}
-% 	{Used Native}
-% 	\vfill\null
 
 \cvsection{Projects}
 \vspace{4pt}
 	
 \cvproject
 	{Oslyn.io | Your digital bandmate}
-	{Android \& IOS App}
-	{Oslyn is an app that listens to you play and accompanies you in real-time with a wide selection of pads, synths, and sounds. \newline \newline
-  As a data scientist, I used Tensorflow and AWS Sagemaker to train and improve multiple model architectures (ie. Feed Forward, Recurrent Neural Net, etc.) 
-  utilizing 400+ labelled songs and pretraining on audio scraped from the internet to achieve increased accuracy. \newline \newline
-  As a developer, I used AWS Amplify to authenticate and connect to our cloud infrastructure. Amplify Cognito for authentication. 
-  DynamoDB \& AWS Appsync (graphQL) to store user data, model information, etc. S3 was used for sound and model files. 
-  I used React-Native + Java \& Swift deployed on the Play Store and App Store for Android and IOS respectively.
-  }
+	{Android \& IOS App, Artificial intelligence AI}
+	{Oslyn is an app that listens to you play and accompanies you in real-time with a wide selection of pads, synths, and sounds. \\[6pt]
+  As a data scientist, I used Tensorflow and AWS Sagemaker to train multiple model architectures (ie. Feed Forward, Recurrent Neural Net, etc.) 
+  utilizing 400+ labelled songs and pretraining on scraped audio data. \\[6pt]
+  As a developer, I used AWS Amplify \& Cognito to authenticate and connect to our cloud infrastructure.
+  DynamoDB \& AWS Appsync (graphQL) to store and fetch user data. S3 to store audio and AI model binaries. 
+  I used React-Native + Java \& Swift deployed on the Play Store and App Store for Android and IOS respectively. \\[5pt]
+  \iconhref{Link}{16}{https://oslyn.io}{https://oslyn.io/}{black} \\[1pt]} 
   {resources/oslyn.png}
 	\vfill\null
-   	
+  
 
 \cvproject
 	{Nodis.io | Get Noticed}
@@ -609,8 +604,9 @@
 	{Nodis’ goal is to help small businesses around the world to get noticed by local communities. 
   Nodis Challenge is our fun and interactive way to reach that goal. 
   Nodis is a cryptocurrency, built on the NEO blockchain using Reactjs and MongoDB hosted on AWS EC2. 
-  I also helped test the smart contract on the NEO test network using Python. \newline
-  \iconhref{Github}{16}{https://github.com/nodis-io}{https://github.com/nodis-io}{black}\\[6pt]
+  I also helped test the smart contract on the NEO test network using Python. \\[6pt]
+  \iconhref{Link}{16}{https://nodis.io}{https://nodis.io/}{black} \\
+  \iconhref{Github}{16}{https://github.com/nodis-io}{https://github.com/nodis-io}{black}\\[1pt]
   }
   {resources/nodis.jpeg}
 	\vfill\null
@@ -620,7 +616,8 @@
 	{One Chanhs Co. | Bridal store}
 	{Serverless React store}
 	{Built with React and AWS Appsync. Stripe API for monetization. \newline
-  Used tailwind.css to allow my client greater design customizability. \newline
+  Used tailwind.css to allow my client greater design customizability. \\[6pt]
+  \iconhref{Link}{16}{https://onechanhs.ca}{https://onechanhs.ca/}{black} \\
   \iconhref{Github}{16}{https://github.com/DominicFung/onechanhs}{https://github.com/DominicFung/onechanhs}{black}\\[6pt]
   }
   {resources/onechanhs.png}
@@ -630,7 +627,9 @@
 \cvproject
 	{Logistical.ly}
 	{Desktop app via React-Electron}
-	{Windows desktop app built with Typescript, React and Electron to help a client find the lowest courier cost given a list of destinations and courier services. \newline
+	{Windows desktop app built with Typescript, React and Electron to 
+  help a client find the lowest courier cost given a list of destinations and 
+  courier services. \\[6pt]
   \iconhref{Github}{16}{https://github.com/DominicFung/logistical.ly}{https://github.com/DominicFung/logistical.ly}{black}\\[6pt]
   }
   {resources/logistically.png}
@@ -660,33 +659,33 @@
   {resources/microsoft-cert.jpeg}
   \vfill\null
 
-% \begin{itemize}[leftmargin=*]
-% \item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-% \item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-% \item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-% \end{itemize}
 % hofixes to create fake-space to ensure the whole height is used
 \mbox{}
 \vfill
 \mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-
-
-\today     \hspace{1cm}   \hrulefill
-
-\hspace*{30mm}\phantom{ \today } Dom Fung
+% \vfill
+% \mbox{}
+% \vfill
+% \mbox{}
+% \vfill
+% \mbox{}
+% \vfill
+% \mbox{}
+% \vfill
+% \mbox{}
 
 \end{rightcolumn}
 \end{paracol}
+
+\mbox{}
+\vfill
+\mbox{}
+
+\today     \hspace{1cm}   \hrulefill
+
+\hspace*{62mm}\phantom{ \today } Dominic Fung
+
+
 
 
 \end{document}
