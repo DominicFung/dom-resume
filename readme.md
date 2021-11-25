@@ -1,12 +1,12 @@
 
 <p align="center">
 <img src="https://github.com/DominicFung/dom-resume/blob/main/img/resume-p1.png?raw=true" align="center"
-     alt="Dom Resume p1" width="830" height="456">
+     alt="Dom Resume p1" width="596" height="842">
 </p>
 
 <p align="center">
 <img src="https://github.com/DominicFung/dom-resume/blob/main/img/resume-p2.png?raw=true" align="center"
-     alt="Dom Resume p1" width="830" height="456">
+     alt="Dom Resume p1" width="596" height="842">
 </p>
 
 ```
